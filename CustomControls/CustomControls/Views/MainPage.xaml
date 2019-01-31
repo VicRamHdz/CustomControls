@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:CustomControls" 
+             xmlns:customcontrols="clr-namespace:CustomControls"
+             x:Class="CustomControls.Views.MainPage">
+    <StackLayout Margin="20,30,20,20">
+        <!-- Place new controls here -->
+        <Label Text="Entry types" HorizontalOptions="FillAndExpand" Margin="0,0,0,20"/>
+        
+        <Label Text="Underline" HorizontalOptions="FillAndExpand" />
+        <customcontrols:CustomEntry 
+                CustomBorderType="Underline" CustomBorderColor="Navy" />
+        
+        <Label Text="Rounded" HorizontalOptions="FillAndExpand" />
+        <customcontrols:CustomEntry CustomBorderType="Rounded" CustomBorderColor="DarkRed" />
+    </StackLayout>
+</ContentPage>

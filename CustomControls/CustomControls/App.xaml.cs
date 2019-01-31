@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CustomControls.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CustomControls
@@ -11,7 +12,8 @@ namespace CustomControls
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new TabPageExample();
         }
 
         protected override void OnStart()

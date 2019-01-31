@@ -1,5 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CustomControls.App">
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CustomControls.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <!--TabButtons-->
+            <Color x:Key="ButtonTabStartBackColor">#1d344e</Color>
+            <Color x:Key="ButtonTabEndBackColor">#297e7c</Color>
+            <Color x:Key="ButtonTabStartActiveBackColor">#1d344e</Color>
+            <Color x:Key="ButtonTabEndActiveBackColor">#7fb1b2</Color>
+            <Color x:Key="ButtonTabTitleTextColor">White</Color>
+            <Color x:Key="ButtonTabTitleActiveTextColor">White</Color>
+            <Color x:Key="OutlineColor">#DFB139</Color>
+            <Color x:Key="DividerGrayColor">#B0B0B0</Color>
+            <Color x:Key="TransparentBackgroundColor">#66000000</Color>
+            <Color x:Key="TransparentYellowBackgroundColor">#66F58220</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

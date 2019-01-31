@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:customcontrols="clr-namespace:CustomControls"
+             x:Class="CustomControls.Views.TabPageExample">
+    <ContentPage.Content>
+         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions> 
+            <customcontrols:CustomTabPage x:Name="tabControl"
+            Grid.Row="0"
+            ButtonsPosition="Up" IconPosition="Up" 
+            TitleFontSize="11" TitleFontAttributes="Bold" 
+            StartBackgroundColor="{StaticResource ButtonTabStartBackColor}"
+            EndBackgroundColor="{StaticResource ButtonTabEndBackColor}"
+            FullUnderlineColor="{StaticResource ButtonTabStartBackColor}"
+            HasUnderline="false" 
+            StartActiveBackgroundColor="{StaticResource ButtonTabStartActiveBackColor}"
+            EndActiveBackgroundColor="{StaticResource ButtonTabEndActiveBackColor}"
+            TitleTextColor="{StaticResource ButtonTabTitleTextColor}" 
+            TitleActiveTextColor="{StaticResource ButtonTabTitleActiveTextColor}"
+            Pages="{Binding Pages}" 
+            VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
